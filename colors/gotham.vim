@@ -167,6 +167,14 @@ call s:Clear('StatusLine')
 call s:Col('StatusLine', 'base4', 'base1')
 call s:Col('WildMenu', 'base7', 'cyan')
 
+" The 'Hit ENTER to continue prompt'.
+call s:Col('Question', 'green')
+
+" Tab line.
+call s:Col('TabLine', 'base6', 'base2')
+call s:Col('TabLineSel', 'base7', 'cyan')
+call s:Col('TabLineFill', 'base1', 'cyan')
+
 
 " Programming languages and filetypes ==========================================
 
