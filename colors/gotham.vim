@@ -7,17 +7,15 @@
 "
 " URL: https://github.com/whatyouhide/vim-gotham
 " Aurhor: Andrea Leopardi <an.leopardi@gmail.com>
-" Version: alpha1
+" Version: ϡ
 " License: MIT
 
 
 " Bootstrap ===================================================================
+
 hi clear
-
-set background=dark
-
 if exists('syntax_on') | syntax reset | endif
-
+set background=dark
 let g:colors_name = 'gotham'
 
 
@@ -56,6 +54,10 @@ endfunction
 function! s:Attr(group, attr)
   let l:attrs = [a:group, 'term=' . a:attr, 'cterm=' . a:attr, 'gui=' . a:attr]
   call s:Highlight(l:attrs)
+endfunction
+
+function! s:Clear(group)
+  exec 'highlight clear ' . a:group
 endfunction
 
 
@@ -115,7 +117,6 @@ call s:Col('Identifier', 'base5')
 
 " Constants, Ruby symbols.
 call s:Col('Constant', 'magenta')
-" call s:Col('Constant', 'orange')
 
 " Some HTML tags (<title>, some <h*>s)
 call s:Col('Title', 'orange')
@@ -137,7 +138,7 @@ call s:Col('NonText', 'base4')
 call s:Col('Todo', 'magenta', s:background)
 
 " The column separating vertical splits.
-call s:Col('VertSplit', 'base1', 'base1')
+call s:Col('VertSplit', 'base2')
 
 " Matching parenthesis.
 call s:Col('MatchParen', 'base1', 'orange')
@@ -156,7 +157,15 @@ call s:Col('PmenuSel', 'base7', 'base4')
 call s:Col('PmenuSbar', '', 'base2')
 call s:Col('PmenuThumb', '', 'base4')
 
-" Spelling.
+" Command line stuff.
+call s:Col('ErrorMsg', 'red', 'base1')
+call s:Col('ModeMsg', 'blue')
+
+" Wild menu.
+" StatusLine determines the color of the non-active entries in the wild menu.
+call s:Clear('StatusLine')
+call s:Col('StatusLine', 'base4', 'base1')
+call s:Col('WildMenu', 'base7', 'cyan')
 
 
 " Programming languages and filetypes ==========================================
