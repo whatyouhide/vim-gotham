@@ -48,6 +48,7 @@ function! s:Col(group, fg_name, ...)
     let pieces = s:AddGroundValues(pieces, 'bg', s:colors[a:1])
   endif
 
+  call s:Clear(a:group)
   call s:Highlight(pieces)
 endfunction
 
@@ -67,24 +68,24 @@ endfunction
 let s:colors = {}
 
 " Base colors.
-let s:colors.base0 = { 'gui': '#0c1014' }
-let s:colors.base1 = { 'gui': '#11151c' }
-let s:colors.base2 = { 'gui': '#091f2e' }
-let s:colors.base3 = { 'gui': '#0a3749' }
-let s:colors.base4 = { 'gui': '#245361' }
-let s:colors.base5 = { 'gui': '#599cab' }
-let s:colors.base6 = { 'gui': '#99d1ce' }
-let s:colors.base7 = { 'gui': '#d3ebe9' }
+let s:colors.base0 = { 'gui': '#0c1014', 'cterm': 0 }
+let s:colors.base1 = { 'gui': '#11151c', 'cterm': 8 }
+let s:colors.base2 = { 'gui': '#091f2e', 'cterm': 10 }
+let s:colors.base3 = { 'gui': '#0a3749', 'cterm': 12 }
+let s:colors.base4 = { 'gui': '#245361', 'cterm': 11 }
+let s:colors.base5 = { 'gui': '#599cab', 'cterm': 14 }
+let s:colors.base6 = { 'gui': '#99d1ce', 'cterm': 7 }
+let s:colors.base7 = { 'gui': '#d3ebe9', 'cterm': 15 }
 
 " Other colors.
-let s:colors.red     = { 'gui': '#c23127' }
-let s:colors.orange  = { 'gui': '#d26937' }
-let s:colors.yellow  = { 'gui': '#edb443' }
-let s:colors.magenta = { 'gui': '#888ca6' }
-let s:colors.violet  = { 'gui': '#4e5166' }
-let s:colors.blue    = { 'gui': '#195466' }
-let s:colors.cyan    = { 'gui': '#33859E' }
-let s:colors.green   = { 'gui': '#2aa889' }
+let s:colors.red     = { 'gui': '#c23127', 'cterm': 1  }
+let s:colors.orange  = { 'gui': '#d26937', 'cterm': 9  }
+let s:colors.yellow  = { 'gui': '#edb443', 'cterm': 3  }
+let s:colors.magenta = { 'gui': '#888ca6', 'cterm': 13 }
+let s:colors.violet  = { 'gui': '#4e5166', 'cterm': 5  }
+let s:colors.blue    = { 'gui': '#195466', 'cterm': 4  }
+let s:colors.cyan    = { 'gui': '#33859E', 'cterm': 6  }
+let s:colors.green   = { 'gui': '#2aa889', 'cterm': 2  }
 
 
 " Native highlighting ==========================================================
@@ -138,7 +139,8 @@ call s:Col('NonText', 'base4')
 call s:Col('Todo', 'magenta', s:background)
 
 " The column separating vertical splits.
-call s:Col('VertSplit', 'base2')
+call s:Col('VertSplit', 'base2', 'base2')
+call s:Col('StatusLineNC', 'base2', 'base2')
 
 " Matching parenthesis.
 call s:Col('MatchParen', 'base1', 'orange')
@@ -163,8 +165,7 @@ call s:Col('ModeMsg', 'blue')
 
 " Wild menu.
 " StatusLine determines the color of the non-active entries in the wild menu.
-call s:Clear('StatusLine')
-call s:Col('StatusLine', 'base4', 'base1')
+call s:Col('StatusLine', 'base4', 'base2')
 call s:Col('WildMenu', 'base7', 'cyan')
 
 " The 'Hit ENTER to continue prompt'.
