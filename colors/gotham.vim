@@ -195,10 +195,14 @@ call s:Col('DiffText', 'yellow')
 
 " Programming languages and filetypes ==========================================
 
+" Ruby.
 call s:Col('rubyDefine', 'blue')
 call s:Col('rubyStringDelimiter', 'green')
 
+" HTML (and often Markdown).
 call s:Col('htmlArg', 'blue')
+call s:Col('htmlItalic', 'magenta')
+call s:Col('htmlBold', 'cyan', '')
 
 
 " Plugin highlighting ==========================================================
