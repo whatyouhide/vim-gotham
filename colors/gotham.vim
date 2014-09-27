@@ -145,6 +145,9 @@ call s:Col('StatusLineNC', 'base2', 'base2')
 " Matching parenthesis.
 call s:Col('MatchParen', 'base1', 'orange')
 
+" Special keys, e.g. some of the chars in 'listchars'. See ':h listchars'.
+call s:Col('SpecialKey', 'base4')
+
 " Folds.
 call s:Col('Folded', 'base6', 'blue')
 call s:Col('FoldColumn', 'base5', 'base3')
@@ -175,6 +178,19 @@ call s:Col('Question', 'green')
 call s:Col('TabLine', 'base6', 'base2')
 call s:Col('TabLineSel', 'base7', 'cyan')
 call s:Col('TabLineFill', 'base1', 'cyan')
+
+" Spelling.
+call s:Col('SpellBad', 'base7', 'red')
+call s:Col('SpellCap', 'base7', 'blue')
+call s:Col('SpellLocal', 'yellow')
+call s:Col('SpellRare', 'base7', 'violet')
+
+" Diffing.
+call s:Col('DiffAdd', 'green')
+call s:Col('DiffChange', 'cyan')
+call s:Col('DiffDelete', 'red')
+call s:Col('DiffText', 'yellow')
+
 
 
 " Programming languages and filetypes ==========================================

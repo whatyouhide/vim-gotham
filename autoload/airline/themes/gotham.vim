@@ -52,7 +52,7 @@ let g:airline#themes#gotham#palette.normal =
 
 " Overrides for when the buffer is modified in normal mode.
 let g:airline#themes#gotham#palette.normal_modified = {
-      \ 'airline_c': s:Array('base7', 'violet', '')
+      \ 'airline_c': s:Array('magenta', 'base1', '')
       \ }
 
 
@@ -60,7 +60,7 @@ let g:airline#themes#gotham#palette.normal_modified = {
 
 " Colors.
 let s:I1 = s:Array('base7', 'yellow')
-let s:I2 = s:Array('base6', 'base4')
+let s:I2 = s:Array('base6', 'base3')
 let s:I3 = s:Array('base4', 'base1')
 
 let g:airline#themes#gotham#palette.insert =
@@ -68,7 +68,7 @@ let g:airline#themes#gotham#palette.insert =
 
 " Overrides for when the buffer is modified in insert mode.
 let g:airline#themes#gotham#palette.insert_modified = {
-      \ 'airline_c': s:Array('base7', 'violet')
+      \ 'airline_c': s:Array('magenta', 'base1', '')
       \ }
 
 " Overrides for when the paste is toggled in insert mode.
