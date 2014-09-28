@@ -39,6 +39,13 @@ When you have the plugin installed, you can set it in your `vimrc`:
 colorscheme gotham
 ```
 
+Gotham supports [vim-airline][vim-airline] out of the box. When you use the
+Gotham colorscheme, Airline should be able to pick it up and use it. If you want
+to set it manually, you can use the `AirlineTheme` command:
+
+    :AirlineTheme gotham
+
+
 ### In the terminal
 
 As of now, the only supported terminal emulator is [iTerm 2][iterm2]. You can
@@ -57,3 +64,4 @@ MIT &copy; 2014 Andrea Leopardi, see [LICENSE.txt][license-file]
 [vim-plug]: https://github.com/junegunn/vim-plug
 [iterm2]: http://iterm2.com/
 [iterm2-gotham]: https://github.com/whatyouhide/iterm2-gotham-colorscheme
+[vim-airline]: https://github.com/bling/vim-airline

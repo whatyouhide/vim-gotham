@@ -175,9 +175,9 @@ call s:Col('WildMenu', 'base7', 'cyan')
 call s:Col('Question', 'green')
 
 " Tab line.
-call s:Col('TabLine', 'base6', 'base2')
-call s:Col('TabLineSel', 'base7', 'cyan')
-call s:Col('TabLineFill', 'base1', 'cyan')
+call s:Col('TabLineSel', 'base7', 'base4')  " the selected tab
+call s:Col('TabLine', 'base6', 'base2')     " the non-selected tabs
+call s:Col('TabLineFill', 'base0', 'base0') " the rest of the tab line
 
 " Spelling.
 call s:Col('SpellBad', 'base7', 'red')
@@ -206,9 +206,6 @@ call s:Col('htmlBold', 'cyan', '')
 
 
 " Plugin highlighting ==========================================================
-
-" lengthmatters.vim
-call s:Col('OverLength', '', 'base3')
 
 " GitGutter
 call s:Col('GitGutterAdd', 'green', s:linenr_background)
