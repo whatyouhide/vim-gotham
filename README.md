@@ -1,36 +1,39 @@
 ![logo][logo]
 
 
-> It's the vim colorscheme we set that defines us. *(Batman)*
+> It's the colorscheme we set that defines us. *(Batman)*
 
-Gotham is a **very dark** vim colorscheme. It works flawlessly with GUI vim
-(MacVim and gVim) and it works on terminal vim with the proper terminal
-emulator's colorscheme.
+Gotham is a **very dark** colorscheme.
+As of now, it works on GUI vim (MacVim or gVim) and on iTerm 2, but more support
+is coming.
 
 ![screenshot][screenshot]
 
 
 ## Installation
 
-### In Vim
+### Vim (GUI vim + terminal vim)
 
 I moved to [vim-plug][vim-plug] a while ago and never looked back. Anyway, you
-can install Gotham with whatever package manager you use. For example:
+can install Gotham with whatever package manager you use.
+
+The most important thing to notice is that you need to specify the path to the
+vim part of the colorscheme (which is `vim/`), otherwise most plugin managers
+will just add this repository to the `runtimepath` and vim won't be able to see
+the colorscheme.
+
+For example:
 
 ``` viml
 " vim-plug
-Plug 'whatyouhide/vim-gotham'
+Plug 'whatyouhide/vim-gotham', { 'rtp': 'vim' }
 " NeoBundle
-NeoBundle 'whatyouhide/vim-gotham'
+NeoBundle 'whatyouhide/vim-gotham', { 'rtp': 'vim' }
 " Vundle
-Plugin 'whatyouhide/vim-gotham'
+Plugin 'whatyouhide/vim-gotham', { 'rtp': 'vim' }
 ```
 
-If you use pathogen, clone the repository inside `~/.vim/bundle`:
-
-    git clone https://github.com/whatyouhide/vim-gotham ~/.vim/bundle
-
-If you don't use a plugin manager just copy the content of `colors/` to
+If you don't use a plugin manager just copy the content of `vim/colors/` to
 `~/.vim/colors`.
 
 When you have the plugin installed, you can set it in your `vimrc`:
@@ -46,22 +49,31 @@ to set it manually, you can use the `AirlineTheme` command:
     :AirlineTheme gotham
 
 
-### In the terminal
+### iTerm 2
 
-As of now, the only supported terminal emulator is [iTerm 2][iterm2]. You can
-find the Gotham colorscheme for iTerm 2 and its installation instructions in its
-own [repository][iterm2-gotham].
+[Download][zipped] the repository, unzip it and double-click on the
+`iterm2/Gotham.itermcolors` file. iTerm will confirm the colorscheme has been
+installed.
 
+Now go into `Preferences > Profiles > Colors` and select `Gotham` from the
+`Color Presets...` menu.
+
+You're done!
+
+If you want to see some screenshots, including iTerm ones, have a look at the
+[wiki][wiki].
 
 ## License
 
-MIT &copy; 2014 Andrea Leopardi, see [LICENSE.txt][license-file]
+MIT &copy; 2014 Andrea Leopardi, see [the license][license-file].
 
-[logo]: http://i.imgur.com/FDLEzHC.png
-[screenshot]: http://i.imgur.com/NfRuHFN.png
+[logo]: http://i.imgur.com/FDLEzHC.png "Logo"
+[screenshot]: http://i.imgur.com/NfRuHFN.png "A vim screenshot"
 [license-file]: LICENSE.txt
 
 [vim-plug]: https://github.com/junegunn/vim-plug
 [iterm2]: http://iterm2.com/
 [iterm2-gotham]: https://github.com/whatyouhide/iterm2-gotham-colorscheme
 [vim-airline]: https://github.com/bling/vim-airline
+[wiki]: https://github.com/whatyouhide/gotham-colorscheme/wiki
+[zipped]: https://github.com/whatyouhide/gotham-colorscheme/archive/master.zip
