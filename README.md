@@ -44,13 +44,21 @@ to set it manually, you can use the `AirlineTheme` command:
     :AirlineTheme gotham
 
 
-### iTerm 2
+### Other
 
-Installation instructions and screenshots for iTerm 2 are available in [their
-own repository][iterm-repo].
+Gotham is available for other platforms too (which as of now consist in just
+iTerm 2). If you want terminal vim to look as good as GUI vim, you have to
+install Gotham for your terminal emulator.
 
-If you don't know what iTerm 2 is (and you use OSX), you should really have a
-look at its [project page][iterm2].
+An up-to-date list of supported platforms (editors and terminal emulators) as
+well as installation instructions for each of those platforms are available at
+the [gotham-contrib][gotham-contrib] repository.
+
+
+## Contributing
+
+All forms of contribution are welcome: bug reports, bug fixes, pull requests and
+simple suggestions. Thanks!
 
 
 ## License
@@ -63,6 +71,5 @@ MIT &copy; 2014 Andrea Leopardi, see [the license][license-file].
 [license-file]: LICENSE.txt
 
 [vim-plug]: https://github.com/junegunn/vim-plug
-[iterm2]: http://iterm2.com/
-[iterm-repo]: https://github.com/whatyouhide/iterm2-gotham
+[gotham-contrib]: https://github.com/whatyouhide/gotham-contrib
 [vim-airline]: https://github.com/bling/vim-airline
