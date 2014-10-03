@@ -12,12 +12,8 @@ is coming.
 
 ## Installation
 
-### Vim (GUI vim + terminal vim)
-
 I moved to [vim-plug][vim-plug] a while ago and never looked back. Anyway, you
-can install Gotham with whatever package manager you use.
-
-For example:
+can install Gotham with whatever package manager you use. For example:
 
 ``` viml
 " vim-plug
@@ -37,22 +33,46 @@ When you have the plugin installed, you can set it in your `vimrc`:
 colorscheme gotham
 ```
 
+#### Terminal vim and 256 colors version
+
+If you want to use Gotham in terminal vim, you should consider setting Gotham as
+the colorscheme of your terminal emulator too. See the [relevant
+section](#other).
+
+If you're fine with not-so-faithful colors, a 256 colors version of Gotham is
+available. To use it, just replace `gotham` with `gotham256` in your `vimrc`:
+
+``` viml
+colorscheme gotham256
+```
+
+Using `gotham256` (given that your terminal supports 256 colors) ensures that
+the colors in vim are fixed and don't depend on the colorscheme of the terminal
+emulator.
+
+**Please**, use the 256 colors version only if you know what you're doing since
+it looks "rougher" than the regular version.
+
+#### Airline
+
 Gotham supports [vim-airline][vim-airline] out of the box. When you use the
 Gotham colorscheme, Airline should be able to pick it up and use it. If you want
-to set it manually, you can use the `AirlineTheme` command:
+to set it manually, you can use the `AirlineTheme` command for both the regular
+version and the 256 colors version:
 
     :AirlineTheme gotham
+    :AirlineTheme gotham256
 
 
-### Other
+### <a name=other></a>Other
 
-Gotham is available for other platforms too (which as of now consist in just
-iTerm 2). If you want terminal vim to look as good as GUI vim, you have to
-install Gotham for your terminal emulator.
+Gotham is available for other platforms too. If you want terminal vim to look as
+good as GUI vim, you have to install the Gotham colorscheme for your terminal
+emulator too.
 
-An up-to-date list of supported platforms (editors and terminal emulators) as
-well as installation instructions for each of those platforms are available at
-the [gotham-contrib][gotham-contrib] repository.
+An up-to-date list of supported platforms as well as installation instructions
+for each of those platforms are available at the
+[gotham-contrib][gotham-contrib] repository.
 
 
 ## Contributing
