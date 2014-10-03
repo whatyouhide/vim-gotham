@@ -104,6 +104,7 @@ call s:Col('CursorLine', '', 'base1')
 call s:Col('LineNr', 'base4', s:linenr_background)
 call s:Col('CursorLineNr', 'base5', s:linenr_background)
 call s:Col('SignColumn', '', s:linenr_background)
+call s:Col('ColorColumn', '', s:linenr_background)
 
 " Visual selection.
 call s:Col('Visual', '', 'base3')
