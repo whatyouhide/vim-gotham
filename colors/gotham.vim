@@ -7,7 +7,7 @@
 "
 " URL: https://github.com/whatyouhide/vim-gotham
 " Aurhor: Andrea Leopardi <an.leopardi@gmail.com>
-" Version: ϡ
+" Version: 1.0.0
 " License: MIT
 
 
@@ -97,7 +97,7 @@ let s:linenr_background = 'base1'
 call s:Col('Normal', 'base6', s:background)
 
 " Line, cursor and so on.
-call s:Col('Cursor', '', 'base6')
+call s:Col('Cursor', 'base1', 'base6')
 call s:Col('CursorLine', '', 'base1')
 
 " Sign column, line numbers.
@@ -191,6 +191,9 @@ call s:Col('DiffAdd', 'green')
 call s:Col('DiffChange', 'cyan')
 call s:Col('DiffDelete', 'red')
 call s:Col('DiffText', 'yellow')
+
+" Directories (e.g. netrw).
+call s:Col('Directory', 'cyan')
 
 
 " Programming languages and filetypes ==========================================

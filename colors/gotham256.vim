@@ -97,7 +97,7 @@ let s:linenr_background = 'base1'
 call s:Col('Normal', 'base6', s:background)
 
 " Line, cursor and so on.
-call s:Col('Cursor', '', 'base6')
+call s:Col('Cursor', 'base1', 'base6')
 call s:Col('CursorLine', '', 'base1')
 
 " Sign column, line numbers.
