@@ -141,7 +141,7 @@ call s:Col('Todo', 'magenta', s:background)
 
 " The column separating vertical splits.
 call s:Col('VertSplit', 'base2', 'base2')
-call s:Col('StatusLineNC', 'base2', 'base2')
+call s:Col('StatusLineNC', 'base4', 'base2')
 
 " Matching parenthesis.
 call s:Col('MatchParen', 'base1', 'orange')
@@ -169,7 +169,7 @@ call s:Col('ModeMsg', 'blue')
 
 " Wild menu.
 " StatusLine determines the color of the non-active entries in the wild menu.
-call s:Col('StatusLine', 'base4', 'base2')
+call s:Col('StatusLine', 'base5', 'base2')
 call s:Col('WildMenu', 'base7', 'cyan')
 
 " The 'Hit ENTER to continue prompt'.
