@@ -103,7 +103,7 @@ call s:Col('CursorLine', '', 'base1')
 " Sign column, line numbers.
 call s:Col('LineNr', 'base4', s:linenr_background)
 call s:Col('CursorLineNr', 'base5', s:linenr_background)
-call s:Col('SignColumn', '', s:linenr_background)
+call s:Col('SignColumn', '', s:background)
 call s:Col('ColorColumn', '', s:linenr_background)
 
 " Visual selection.
@@ -140,7 +140,7 @@ call s:Col('NonText', 'base4')
 call s:Col('Todo', 'magenta', s:background)
 
 " The column separating vertical splits.
-call s:Col('VertSplit', 'base2', 'base2')
+call s:Col('VertSplit', 'base2', s:background)
 call s:Col('StatusLineNC', 'base4', 'base2')
 
 " Matching parenthesis.
