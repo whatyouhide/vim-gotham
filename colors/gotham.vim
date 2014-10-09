@@ -140,7 +140,7 @@ call s:Col('NonText', 'base4')
 call s:Col('Todo', 'magenta', s:background)
 
 " The column separating vertical splits.
-call s:Col('VertSplit', 'base2', 'base2')
+call s:Col('VertSplit', 'base4', s:linenr_background)
 call s:Col('StatusLineNC', 'base4', 'base2')
 
 " Matching parenthesis.
