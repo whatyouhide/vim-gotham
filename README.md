@@ -74,6 +74,8 @@ An up-to-date list of supported platforms as well as installation instructions
 for each of those platforms are available at the
 [gotham-contrib][gotham-contrib] repository.
 
+There's an [Emacs version][emacs-version] too, but I don't maintain it.
+
 
 ## Contributing
 
@@ -93,3 +95,4 @@ MIT &copy; 2014 Andrea Leopardi, see [the license][license-file].
 [vim-plug]: https://github.com/junegunn/vim-plug
 [gotham-contrib]: https://github.com/whatyouhide/gotham-contrib
 [vim-airline]: https://github.com/bling/vim-airline
+[emacs-version]: https://github.com/wasamasa/gotham-theme
