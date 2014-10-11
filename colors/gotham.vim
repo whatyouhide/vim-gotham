@@ -188,10 +188,10 @@ call s:Col('SpellLocal', 'yellow')
 call s:Col('SpellRare', 'base7', 'violet')
 
 " Diffing.
-call s:Col('DiffAdd', 'green')
-call s:Col('DiffChange', 'cyan')
-call s:Col('DiffDelete', 'red')
-call s:Col('DiffText', 'yellow')
+call s:Col('DiffAdd', 'base7', 'green')
+call s:Col('DiffChange', 'base7', 'blue')
+call s:Col('DiffDelete', 'base7', 'red')
+call s:Col('DiffText', 'base7', 'cyan')
 
 " Directories (e.g. netrw).
 call s:Col('Directory', 'cyan')
