@@ -3,9 +3,9 @@
 
 > It's the colorscheme we set that defines us. *(Batman)*
 
-Gotham is a **very dark** vim colorscheme.
-As of now, it works on GUI vim (MacVim or gVim) and on iTerm 2, but more support
-is coming.
+Gotham is a **very dark** vim colorscheme. It works on GUI vim (MacVim or gVim)
+and on terminal vim. For terminal vim, there's support for a lot of terminal
+emulators in the [gotham-contrib][gotham-contrib] repository.
 
 ![screenshot][screenshot]
 
@@ -82,6 +82,10 @@ There's an [Emacs version][emacs-version] too, but I don't maintain it.
 All forms of contribution are welcome: bug reports, bug fixes, pull requests and
 simple suggestions. Thanks!
 
+### List of contributors
+
+You can find the list of contributors [here][contributors].
+
 
 ## License
 
@@ -96,3 +100,4 @@ MIT &copy; 2014 Andrea Leopardi, see [the license][license-file].
 [gotham-contrib]: https://github.com/whatyouhide/gotham-contrib
 [vim-airline]: https://github.com/bling/vim-airline
 [emacs-version]: https://github.com/wasamasa/gotham-theme
+[contributors]: https://github.com/whatyouhide/vim-gotham/graphs/contributors
