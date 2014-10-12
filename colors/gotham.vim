@@ -209,7 +209,7 @@ call s:Col('htmlItalic', 'magenta')
 call s:Col('htmlBold', 'cyan', '')
 
 
-" Plugin " =====================================================================
+" Plugin =======================================================================
 
 " GitGutter
 call s:Col('GitGutterAdd', 'green', s:linenr_background)
