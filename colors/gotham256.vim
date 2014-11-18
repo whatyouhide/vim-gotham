@@ -137,6 +137,9 @@ call s:Col('PreProc', 'red')
 " Tildes on the bottom of the page.
 call s:Col('NonText', 'base4')
 
+" Concealed stuff.
+call s:Col('Conceal', 'cyan', s:background)
+
 " TODO and similar tags.
 call s:Col('Todo', 'magenta', s:background)
 
