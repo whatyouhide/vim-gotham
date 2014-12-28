@@ -30,7 +30,7 @@ let s:p.inactive.middle = [ [ s:base0, s:base02 ] ]
 let s:p.tabline.left    = [ [ s:base1, s:base01 ] ]
 let s:p.tabline.tabsel  = [ [ s:base3, s:base0 ] ]
 let s:p.tabline.middle  = [ [ s:base1, s:base02 ] ]
-let s:p.tabline.right   = [ [ s:base1, s:base02 ] ]
+let s:p.tabline.right   = [ [ s:base1, s:base01 ] ]
 let s:p.normal.error    = [ [ s:base3, s:red ] ]
 let s:p.normal.warning  = [ [ s:base3, s:orange ] ]
 
