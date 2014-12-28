@@ -63,6 +63,16 @@ version and the 256 colors version:
     :AirlineTheme gotham
     :AirlineTheme gotham256
 
+#### Lightline
+
+Gotham supports [lightline.vim][lightline.vim] too. To enable the colorscheme,
+add one of the following lines to your `.vimrc`:
+
+``` viml
+let g:lightline.colorscheme = 'gotham'
+let g:lightline.colorscheme = 'gotham256'
+```
+
 
 ### <a name=other></a>Other
 
@@ -99,5 +109,6 @@ MIT &copy; 2014 Andrea Leopardi, see [the license][license-file].
 [vim-plug]: https://github.com/junegunn/vim-plug
 [gotham-contrib]: https://github.com/whatyouhide/gotham-contrib
 [vim-airline]: https://github.com/bling/vim-airline
+[lightline.vim]: https://github.com/itchyny/lightline.vim
 [emacs-version]: https://github.com/wasamasa/gotham-theme
 [contributors]: https://github.com/whatyouhide/vim-gotham/graphs/contributors
