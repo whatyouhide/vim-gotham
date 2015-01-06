@@ -69,8 +69,8 @@ Gotham supports [lightline.vim][lightline.vim] too. To enable the colorscheme,
 add one of the following lines to your `.vimrc`:
 
 ``` viml
-let g:lightline.colorscheme = 'gotham'
-let g:lightline.colorscheme = 'gotham256'
+let g:lightline = { 'colorscheme': 'gotham' }
+let g:lightline = { 'colorscheme': 'gotham256' }
 ```
 
 
