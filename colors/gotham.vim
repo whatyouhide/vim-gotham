@@ -151,7 +151,7 @@ call s:Col('StatusLineNC', 'base4', 'base2')
 call s:Col('MatchParen', 'base1', 'orange')
 
 " Special keys, e.g. some of the chars in 'listchars'. See ':h listchars'.
-call s:Col('SpecialKey', 'base4')
+call s:Col('SpecialKey', 'base3')
 
 " Folds.
 call s:Col('Folded', 'base6', 'blue')
