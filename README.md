@@ -99,7 +99,7 @@ You can find the list of contributors [here][contributors].
 
 ## License
 
-MIT &copy; 2014 Andrea Leopardi, see [the license][license-file].
+MIT &copy; 2014-2015 Andrea Leopardi, see [the license][license-file].
 
 
 [logo]: http://i.imgur.com/FDLEzHC.png "Logo"
