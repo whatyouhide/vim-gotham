@@ -227,6 +227,8 @@ call s:Col('CtrlPPrtBase', 'base4')             " '>>>' prompt
 call s:Col('CtrlPPrtText', 'cyan')              " text in the prompt
 call s:Col('CtrlPPtrCursor', 'base7')           " cursor in the prompt
 
+" unite.vim
+call s:Col('uniteSource__GrepPattern', 'base7', 'green')
 
 
 " Cleanup =====================================================================
