@@ -211,6 +211,9 @@ call s:Col('htmlArg', 'blue')
 call s:Col('htmlItalic', 'magenta')
 call s:Col('htmlBold', 'cyan', '')
 
+" Python                                                                                                                   
+call s:Col('pythonStatement', 'blue')
+
 
 " Plugin =======================================================================
 
