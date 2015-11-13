@@ -87,6 +87,21 @@ for each of those platforms are available at the
 There's an [Emacs version][emacs-version] too, but I don't maintain it.
 
 
+### Color Palette
+
+
+| Color Base    | Hex           | Other Colors  | Hex           |
+| ------------- | ------------- | ------------- | ------------- |
+| Base 0        | `#0c1014`     | Red           | `#c23127`     |
+| Base 1        | `#11151c`     | Orange        | `#d26937`     |
+| Base 2        | `#091f2e`     | Yellow        | `#edb443`     |
+| Base 3        | `#0a3749`     | Magenta       | `#888ca6`     |
+| Base 4        | `#245361`     | Violet        | `#4e5166`     |
+| Base 5        | `#599cab`     | Blue          | `#195466`     |
+| Base 6        | `#99d1ce`     | Cyan          | `#33859E`     |
+| Base 7        | `#d3ebe9`     | Green         | `#2aa889`     |
+
+
 ## Contributing
 
 All forms of contribution are welcome: bug reports, bug fixes, pull requests and
