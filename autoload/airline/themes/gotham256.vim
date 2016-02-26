@@ -42,7 +42,7 @@ endfunction
 " Normal mode =================================================================
 
 " Colors.
-let s:N1 = s:Array('base7', 'base4')
+let s:N1 = s:Array('base3', 'blue')
 let s:N2 = s:Array('base5', 'base2')
 let s:N3 = s:Array('base4', 'base1')
 
@@ -58,7 +58,7 @@ let g:airline#themes#gotham256#palette.normal_modified = {
 " Insert mode ==================================================================
 
 " Colors.
-let s:I1 = s:Array('base7', 'magenta')
+let s:I1 = s:Array('base4', 'green')
 let s:I2 = s:Array('base6', 'base3')
 let s:I3 = s:Array('base4', 'base1')
 
@@ -79,21 +79,25 @@ let g:airline#themes#gotham256#palette.insert_paste = {
 
 " Replace mode ================================================================
 
-" Let's start with the same palette as insert mode...
-let g:airline#themes#gotham256#palette.replace =
-      \ copy(g:airline#themes#gotham256#palette.insert)
-let g:airline#themes#gotham256#palette.replace_modified =
-      \ g:airline#themes#gotham256#palette.insert_modified
-" ...and tweak it slightly.
-let g:airline#themes#gotham256#palette.replace.airline_a =
-      \ [s:I2[0], s:c.red.gui, s:I2[2], 124, '']
+" Colors.
+let s:R1 = s:Array('base3', 'orange')
+let s:R2 = s:Array('base5', 'base2')
+let s:R3 = s:Array('base4', 'base1')
+
+let g:airline#themes#gotham#palette.replace =
+      \ airline#themes#generate_color_map(s:R1, s:R2, s:R3)
+
+" Overrides for when the buffer is modified in normal mode.
+let g:airline#themes#gotham#palette.replace_modified = {
+      \ 'airline_c': s:Array('magenta', 'base1', '')
+      \ }
 
 
 
 " Visual mode =================================================================
 
 " Colors.
-let s:V1 = s:Array('base7', 'green')
+let s:V1 = s:Array('base3', 'magenta')
 let s:V2 = s:Array('base6', 'base3')
 let s:V3 = s:N3
 
