@@ -58,7 +58,7 @@ let g:airline#themes#gotham256#palette.normal_modified = {
 " Insert mode ==================================================================
 
 " Colors.
-let s:I1 = s:Array('base7', 'yellow')
+let s:I1 = s:Array('base7', 'magenta')
 let s:I2 = s:Array('base6', 'base3')
 let s:I3 = s:Array('base4', 'base1')
 
