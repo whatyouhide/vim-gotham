@@ -169,7 +169,9 @@ call s:Col('PmenuThumb', '', 'base4')
 
 " Command line stuff.
 call s:Col('ErrorMsg', 'red', 'base1')
+call s:Col('Error', 'red', 'base1')
 call s:Col('ModeMsg', 'blue')
+call s:Col('WarningMsg', 'red')
 
 " Wild menu.
 " StatusLine determines the color of the non-active entries in the wild menu.
