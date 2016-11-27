@@ -258,6 +258,9 @@ call s:Col('CtrlPPtrCursor', 'base7')           " cursor in the prompt
 call s:Col('UniteGrep', 'base7', 'green')
 let g:unite_source_grep_search_word_highlight = 'UniteGrep'
 
+" ale https://github.com/w0rp/ale
+call s:Col('ALEWarningSign', 'yellow', s:linenr_background)
+call s:Col('ALEErrorSign', 'red', s:linenr_background)
 
 " Cleanup =====================================================================
 
