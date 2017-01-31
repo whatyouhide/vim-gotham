@@ -135,6 +135,7 @@ call s:Col('Number', 'orange')
 call s:Col('Statement', 'base5')
 call s:Col('Special', 'orange')
 call s:Col('Identifier', 'base5')
+call s:Col('Function', 'violet')
 
 " Constants, Ruby symbols.
 call s:Col('Constant', 'magenta')
@@ -222,7 +223,6 @@ call s:Col('DiffSubname', 'base4')
 
 " Directories (e.g. netrw).
 call s:Col('Directory', 'cyan')
-
 
 " Programming languages and filetypes ==========================================
 
