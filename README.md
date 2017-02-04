@@ -73,6 +73,12 @@ let g:lightline = { 'colorscheme': 'gotham' }
 let g:lightline = { 'colorscheme': 'gotham256' }
 ```
 
+If you want to increase the contrast of the modeline when in insert mode, then set the following
+config variable in your vimrc:
+
+```viml
+let g:gotham_airline_contrast_mode = 1
+```
 
 ### <a name=other></a>Other
 

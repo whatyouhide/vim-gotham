@@ -42,7 +42,7 @@ endfunction
 " Normal mode =================================================================
 
 " Colors.
-let s:N1 = s:Array('base3', 'blue')
+let s:N1 = s:Array('base2', 'blue')
 let s:N2 = s:Array('base5', 'base2')
 let s:N3 = s:Array('base4', 'base1')
 
@@ -58,9 +58,14 @@ let g:airline#themes#gotham#palette.normal_modified = {
 " Insert mode ==================================================================
 
 " Colors.
-let s:I1 = s:Array('base4', 'green')
+let s:I1 = s:Array('base2', 'green')
 let s:I2 = s:Array('base6', 'base3')
 let s:I3 = s:Array('base4', 'base1')
+
+" Override for when increased contrast is enabled
+if get(g:, 'gotham_airline_contrast_mode', 1)
+  let s:I1 = s:Array('base2', 'yellow')
+endif
 
 let g:airline#themes#gotham#palette.insert =
       \ airline#themes#generate_color_map(s:I1, s:I2, s:I3)
@@ -73,6 +78,7 @@ let g:airline#themes#gotham#palette.insert_modified = {
 " Overrides for when the paste is toggled in insert mode.
 let g:airline#themes#gotham#palette.insert_paste = {
       \ 'airline_a': [s:I1[0], s:c.orange.gui, s:I1[2], s:c.orange.cterm, ''] ,
+      \ 'airline_z': [s:I1[0], s:c.orange.gui, s:I1[2], s:c.orange.cterm, ''] ,
       \ }
 
 
@@ -80,8 +86,8 @@ let g:airline#themes#gotham#palette.insert_paste = {
 " Replace mode ================================================================
 
 " Colors.
-let s:R1 = s:Array('base3', 'orange')
-let s:R2 = s:Array('base5', 'base2')
+let s:R1 = s:Array('base2', 'orange')
+let s:R2 = s:Array('base6', 'base3')
 let s:R3 = s:Array('base4', 'base1')
 
 let g:airline#themes#gotham#palette.replace =
@@ -97,7 +103,7 @@ let g:airline#themes#gotham#palette.replace_modified = {
 " Visual mode =================================================================
 
 " Colors.
-let s:V1 = s:Array('base3', 'magenta')
+let s:V1 = s:Array('base2', 'magenta')
 let s:V2 = s:Array('base6', 'base3')
 let s:V3 = s:N3
 
