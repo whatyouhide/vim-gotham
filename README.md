@@ -63,6 +63,14 @@ version and the 256 colors version:
     :AirlineTheme gotham
     :AirlineTheme gotham256
 
+Gotham by default emphasises the usage of insert mode by using a distinctive bright yellow color in
+the airline mode segment. To change the color used for insert mode to a darker less emphasised color
+add the following to your vimrc:
+
+```viml
+let g:gotham_airline_emphasised_insert = 0
+```
+
 #### Lightline
 
 Gotham supports [lightline.vim][lightline.vim] too. To enable the colorscheme,
@@ -72,7 +80,6 @@ add one of the following lines to your `.vimrc`:
 let g:lightline = { 'colorscheme': 'gotham' }
 let g:lightline = { 'colorscheme': 'gotham256' }
 ```
-
 
 ### <a name=other></a>Other
 
