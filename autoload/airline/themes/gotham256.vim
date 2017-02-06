@@ -63,7 +63,7 @@ let s:I2 = s:Array('base6', 'base3')
 let s:I3 = s:Array('base4', 'base1')
 
 " Override for when increased contrast is enabled
-if get(g:, 'gotham_airline_contrast_mode', 1)
+if get(g:, 'gotham_airline_emphasised_insert', 1)
   let s:I1 = s:Array('base2', 'yellow')
 endif
 
