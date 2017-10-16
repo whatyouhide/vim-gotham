@@ -263,8 +263,10 @@ call s:Col('ALEWarningSign', 'yellow', s:linenr_background)
 call s:Col('ALEErrorSign', 'red', s:linenr_background)
 
 " neomake https://github.com/neomake/neomake
-call s:Col('NeomakeWarning', 'yellow', s:linenr_background)
-call s:Col('NeomakeError', 'red', s:linenr_background)
+call s:Col('NeomakeWarningSign', 'yellow', s:linenr_background)
+call s:Col('NeomakeErrorSign', 'red', s:linenr_background)
+call s:Col('NeomakeWarning', 'yellow')
+call s:Col('NeomakeError', 'red')
 
 " Cleanup =====================================================================
 
