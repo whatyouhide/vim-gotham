@@ -86,6 +86,7 @@ let s:colors.violet  = { 'gui': '#4e5166', 'cterm': 60  }
 let s:colors.blue    = { 'gui': '#195466', 'cterm': 24  }
 let s:colors.cyan    = { 'gui': '#33859E', 'cterm': 44  }
 let s:colors.green   = { 'gui': '#2aa889', 'cterm': 78  }
+let s:colors.gray    = { 'gui': '#444444', 'cterm':  238 }
 
 " Neovim :terminal colors.
 let g:terminal_color_0  = get(s:colors.base0, 'gui')
@@ -129,7 +130,7 @@ call s:Col('ColorColumn', '', s:linenr_background)
 call s:Col('Visual', '', 'base3')
 
 " Easy-to-guess code elements.
-call s:Col('Comment', 'blue')
+call s:Col('Comment', 'gray')
 call s:Col('String', 'green')
 call s:Col('Number', 'orange')
 call s:Col('Statement', 'base5')
