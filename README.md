@@ -22,6 +22,8 @@ Plug 'whatyouhide/vim-gotham'
 NeoBundle 'whatyouhide/vim-gotham'
 " Vundle
 Plugin 'whatyouhide/vim-gotham'
+" dein.vim
+call dein#add('whatyouhide/vim-gotham')
 ```
 
 If you don't use a plugin manager just copy the content of `vim/colors/` to
