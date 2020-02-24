@@ -1,4 +1,4 @@
-name: reviewdog
+name: main
 
 on:
   push:
