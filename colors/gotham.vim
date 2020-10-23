@@ -236,6 +236,7 @@ call s:Col('htmlItalic', 'magenta')
 call s:Attr('htmlItalic', 'italic')
 call s:Col('htmlBold', 'cyan', '')
 call s:Attr('htmlBold', 'bold')
+call s:Col('htmlBoldItalic', 'cyan', '')
 call s:Attr('htmlBoldItalic', 'bold,italic')
 
 " Python                                                                                                                   
