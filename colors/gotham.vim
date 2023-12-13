@@ -134,7 +134,7 @@ call s:Col('String', 'green')
 call s:Col('Number', 'orange')
 call s:Col('Statement', 'base5')
 call s:Col('Special', 'orange')
-call s:Col('Identifier', 'orange')
+call s:Col('Identifier', 'base5')
 
 " Constants, Ruby symbols.
 call s:Col('Constant', 'magenta')
